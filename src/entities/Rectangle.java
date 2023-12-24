@@ -17,5 +17,9 @@ public class Rectangle {
 		double diagonal = (Math.sqrt(this.heigth) + Math.sqrt(this.heigth));
 		return Math.sqrt(diagonal);
 	}
+	
+	public String toString() {
+		return "AREA = " + areaRectangle(width, heigth);
+	}
 
 }
