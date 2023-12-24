@@ -9,17 +9,22 @@ public class Rectangle {
 		return this.width * this.heigth;
 	}
 	
-	public double perimeteRectangle(double width, double heigth) {
+	public double perimeterRectangle(double width, double heigth) {
 		return 2 * (this.width + this.heigth);
 	}
 	
 	public double diagonalRectangle(double width, double heigth) {
-		double diagonal = (Math.sqrt(this.heigth) + Math.sqrt(this.heigth));
+		double diagonal = (this.width *= width) + (this.heigth *= heigth);
 		return Math.sqrt(diagonal);
 	}
 	
-	public String toString() {
-		return "AREA = " + areaRectangle(width, heigth);
+	public void showResult() {
+		System.out.printf("AREA = %.2f%n"
+				+ "PERIMETER = %.2f%n"
+				+ "DIAGONAL = %.2f%n",
+				areaRectangle(width, heigth),
+				perimeterRectangle(width, heigth),
+				diagonalRectangle(width, heigth));
 	}
 
 }

@@ -18,7 +18,7 @@ public class Program {
 		System.out.println("Enter the height of the rectangle:  ");
 		rectangle.heigth = scanner.nextDouble();
 		
-		System.out.println(rectangle);
+		rectangle.showResult();
 		
 		
 		scanner.close();
